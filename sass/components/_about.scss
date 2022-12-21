@@ -1,0 +1,104 @@
+.about {
+        @extend %section;
+}
+.about {
+        display: flex;
+}
+.list-about {
+
+@media screen and (max-width: 767px) {
+            margin-bottom: 30px;   
+
+        }
+        
+
+@media screen and (min-width: 768px)and(max-width: 1199px) {
+        width: 354px;
+        flex-basis: calc((100% - 2*30px))/ 2;
+        
+        }
+
+@media screen and (min-width: 1200px) {
+                width: 270px;
+               
+        }
+}
+
+
+      
+       
+
+
+.list-about:last-child {
+        @media screen and (max-width: 767px) {
+                        margin-bottom:0px;
+        
+                }
+        @media screen and (min-width: 1200px) {
+                margin-right: auto;
+                }
+        }
+
+.list-about:not(:last-child) {
+        @media screen and (min-width: 1200px) {
+                margin-right: 30px;
+                }
+       
+}
+
+.maim-list-benefits {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--secondary-title-color);
+
+        @media screen and (max-width: 767px) {
+                    text-align: center;     
+                }
+       
+}
+
+.benefits-info {
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em;
+        color: #757575;
+}
+
+
+.list-our-virtues {
+        display: inline-block;
+        justify-content: center;
+       
+        @media screen and (min-width: 767px)and(max-width: 1199px) {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 30px;
+                }
+ @media screen and (min-width: 1200px) {
+        display: flex;
+        
+ }
+}
+.main-icons-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 120px;
+        border-radius: 4px;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 767px) {
+                        width: 354px;
+                }
+
+        @media screen and (min-width: 1200px) {
+                width: 270px;
+                }
+}

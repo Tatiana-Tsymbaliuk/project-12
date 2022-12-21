@@ -1,0 +1,78 @@
+.main {
+        background-color: #2F303A;
+        padding-top: 118px;
+        padding-bottom: 118px;
+       
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+//Phone screen
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img1_s@1x.jpg);
+
+@media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img1_s@2x.jpg);
+                }
+//Tablet screen
+@media screen and (min-width: 481px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img2_m@1x.jpg);
+        
+@media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img2_m@2x.jpg);
+                }
+}
+
+@media screen and (min-width: 769px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img3_l@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img3_l@2x.jpg);
+        }
+}
+
+@media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+        height: 600px;
+}
+}
+.main__caption {
+       
+        
+        font-weight: 900;
+        font-size: 26px;
+        line-height: calc(42/26);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--main-title-color);
+@media (min-width: 768px) {
+        margin-left: 204px;
+        margin-right: 204px;
+}
+
+@media (min-width: 1200px) {
+                width: 696px;
+                font-size: 44px;
+                line-height: 1.36;
+                margin-left: auto;
+                margin-right: auto;
+                }
+
+        
+                
+               
+        
+              
+
+}
+

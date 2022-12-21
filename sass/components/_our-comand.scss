@@ -1,0 +1,71 @@
+.comand {
+ @extend %section;
+}
+.our-comand {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: calc(33/28); 
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--secondary-title-color);
+
+@media screen and (min-width: 1200px) {
+        font-size: 36px;
+                line-height: calc(42/36);
+        margin-bottom: 50px;
+}
+               
+}
+
+
+.list-worker {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        
+}
+
+.comand {
+        background-color: #F5F4FA;
+}
+
+.main-workers {
+        background-color: var(--main-title-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+ 
+  @media screen and (max-width: 1199px) {
+        //flex-basis: calc((100% - 30px) * 2) / 2;
+        flex-basis: calc((100% - 2*30px))/ 2;
+  }
+
+}
+
+.main-worker-name {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(19/16);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--secondary-title-color);
+}
+
+.main-worker-position {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: calc(19/16);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #757575;
+}
+
+.card-worker {
+        padding-top: 30px;
+        padding-bottom: 24px;
+@media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+        }
+
+}

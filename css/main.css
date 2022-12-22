@@ -20,32 +20,32 @@
 }
 
 @media screen and (max-width: 479px) {
-  .comand, .about {
+  .comand, .about, .products {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 480px) {
-  .comand, .about {
+  .comand, .about, .products {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
-  .comand, .about {
+  .comand, .about, .products {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .comand, .about {
+  .comand, .about, .products {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--main-title-color);
 }
 
@@ -215,50 +215,45 @@ img {
   }
 }
 
-.main {
-  background-color: #2F303A;
-  padding-top: 118px;
-  padding-bottom: 118px;
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #84A178;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/img1_s@1x.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img1_s@1x.jpg);
+  background-image: url(../images/fon-products/fon1_s@1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .main {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/img1_s@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img1_s@2x.jpg);
+  .products {
+    background-image: url(../images/fon-products/fon1_s@2x.jpg);
   }
 }
 @media screen and (min-width: 481px) {
-  .main {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/img2_m@1x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img2_m@1x.jpg);
+  .products {
+    background-image: url(../images/fon-products/fon2_m@1x.jpg);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-  .main {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/img2_m@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img2_m@2x.jpg);
+  .products {
+    background-image: url(../images/fon-products/fon2_m@2x.jpg);
   }
 }
 @media screen and (min-width: 769px) {
-  .main {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/img3_l@1x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img3_l@1x.jpg);
+  .products {
+    background-image: url(../images/fon-products/fon3_l@1x.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
-  .main {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/img3_l@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/img3_l@2x.jpg);
+  .products {
+    background-image: url(../../images/fon-products/fon3_l@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
-  .main {
+  .products {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
@@ -266,29 +261,267 @@ img {
   }
 }
 
-.main__caption {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.6153846154;
+.products-caption {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2666666667;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--main-title-color);
+  color: #131313;
+  margin-bottom: 148px;
 }
 @media (min-width: 768px) {
-  .main__caption {
-    margin-left: 204px;
-    margin-right: 204px;
+  .products-caption {
+    font-size: 34px;
+    line-height: 1.2647058824;
   }
 }
 @media (min-width: 1200px) {
-  .main__caption {
-    width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
-    margin-left: auto;
-    margin-right: auto;
+  .products-caption {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
   }
+}
+
+.products-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.2333333333;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 12px;
+}
+
+.products-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-list {
+    gap: 16px;
+  }
+}
+.products-one {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 280px;
+  height: 420px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 24px;
+  background-color: #AEC6A5;
+  margin-bottom: 108px;
+  background-image: url(../images/products/ellips.png);
+  background-repeat: no-repeat;
+  background-position: top -100px center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-one {
+    width: 224px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-one {
+    width: 370px;
+    height: 536px;
+    padding-left: 64px;
+    padding-right: 64px;
+    background-image: url(../images/products/ellipsl.png);
+    background-position: top -187px center;
+  }
+}
+
+.products-one:before {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(../images/products/ice.png);
+  content: "";
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-one:before {
+    -webkit-transform: translate(-7%, -50%);
+            transform: translate(-7%, -50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-one:before {
+    width: 302px;
+    height: 302px;
+    background-image: url(../images/products/ice_l.png);
+    content: "";
+    -webkit-transform: translate(-10%, -60%);
+            transform: translate(-10%, -60%);
+  }
+}
+
+.products-two {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 280px;
+  height: 420px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 24px;
+  background-color: #EFD478;
+  margin-bottom: 108px;
+  background-image: url(../images/products/ellipstwo.png);
+  background-repeat: no-repeat;
+  background-position: top -100px center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-two {
+    width: 224px;
+    width: 224px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-two {
+    width: 370px;
+    height: 536px;
+    padding-left: 64px;
+    padding-right: 64px;
+    background-image: url(../images/products/ellipslcofe.png);
+    background-position: top -187px center;
+  }
+}
+
+.products-two:before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../images/products/cofe.png);
+  content: " ";
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-two:before {
+    -webkit-transform: translate(-7%, -50%);
+            transform: translate(-7%, -50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-two:before {
+    width: 302px;
+    height: 302px;
+    background-image: url(../images/products/cofe_l.png);
+    content: "";
+    -webkit-transform: translate(-10%, -60%);
+            transform: translate(-10%, -60%);
+  }
+}
+
+.products-three {
+  width: 280px;
+  height: 420px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 24px;
+  background-color: #D6936D;
+  background-image: url(../images/products/ellipsthree.png);
+  background-repeat: no-repeat;
+  background-position: top -100px center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-three {
+    width: 224px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-three {
+    width: 370px;
+    height: 536px;
+    padding-left: 64px;
+    padding-right: 64px;
+    background-image: url(../images/products/ellipslmilk.png);
+    background-position: top -187px center;
+  }
+}
+
+.products-three:before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../images/products/shakes.png);
+  content: " ";
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .products-three:before {
+    -webkit-transform: translate(-7%, -50%);
+            transform: translate(-7%, -50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-three:before {
+    width: 302px;
+    height: 302px;
+    background-image: url(../images/products/shakes_l.png);
+    content: "";
+    -webkit-transform: translate(-10%, -60%);
+            transform: translate(-10%, -60%);
+  }
+}
+
+.products-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-top: -60px;
+  margin-bottom: 40px;
+}
+
+.product-info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7857142857;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
 }
 
 .btn {

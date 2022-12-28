@@ -4,6 +4,7 @@
 
 
 .products {
+        position: relative;
         display: flex;
         background-color: #84A178;
         margin-left: auto;
@@ -104,7 +105,7 @@
 
 
 .products-one{
-
+position: relative;
         align-items: center;
         width: 280px;
         height: 420px;
@@ -206,6 +207,7 @@
                 }
 }
 .products-three {
+        position: relative;
         width: 280px;
         height: 420px;
         padding-left: 40px;
@@ -274,4 +276,16 @@
         letter-spacing: 0.04em;
         color: #131313;
         
+}
+.btn-products{
+       
+               bottom: 60px;
+                right:120px;
+        position: absolute;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                border: none;
+               
+                background-color: transparent;
 }
